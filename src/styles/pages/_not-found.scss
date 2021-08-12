@@ -3,12 +3,18 @@
   background-color: $background-color;
   color: $primary-color;
 
+  &.dark{
+    color: $secondary-color-dark;
+    background-color: $background-color-dark;
+  }
+
   .not-found-content{
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     h1{
       margin:0;
       font-size: 3rem;
