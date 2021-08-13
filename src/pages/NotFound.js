@@ -1,15 +1,15 @@
 import React, {useContext} from 'react';
-
+import DarkMode from '../components/DarkMode';
 
 
 const NotFound = () => {
+  const { darkMode } = useContext(DarkMode)
+  
   return (
-    <main className='not-found'>
+    <main className={darkMode?"not-found dark":"not-found"}>
       <div className='not-found-content'>
         <h1>404 Not Found</h1>
-        <h1>La page que vous cherchez n'existe pas...</h1>
-        <div className="img">
-        </div>
+        <h2>La page que vous cherchez n'existe pas...</h2>
       </div>
     </main>
   );
